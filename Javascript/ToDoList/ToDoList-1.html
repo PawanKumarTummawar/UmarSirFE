@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList-1</title>
+    <style>
+        .input-error-message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Todo List Practice 1</h3>
+    <input type="text" placeholder="Enter your Todo Task..." class="js-input-text"/> <br/>
+    <span class="input-error-message js-input-error-message"></span> <br/>
+    <button class="js-add-button">Add Task</button>
+    
+
+    <!--Let's add functionality now-->
+    <script>
+        const todoArrayList = [];
+
+        const addButton = document.querySelector(".js-add-button");
+        addButton.addEventListener('click', addToTodoList);
+
+        const userInputTextbox = document.querySelector(".js-input-text");
+        userInputTextbox.addEventListener("keydown", () => {
+            if(event.key === 'Enter'){
+                addToTodoList();
+            }
+        });
+
+        function addToTodoList() {
+            let InputErrorMessage = document.querySelector('.js-input-error-message');
+            const userInputValue = userInputTextbox.value;
+            if(userInputValue === ""){
+                InputErrorMessage.innerText = "Textbox cannot be blank";
+                userInputTextbox.style.outline = "3px solid red";
+            }
+            else if(todoArrayList.includes(userInputValue)){
+                InputErrorMessage.innerText = "Duplicate Elements are not allowed";
+                userInputTextbox.style.outline = "3px solid red";
+            }
+            else{
+                todoArrayList.push(userInputValue.trimEnd());
+                InputErrorMessage.innerText = "";
+                userInputTextbox.style.outline = "";
+            }
+
+            console.log(todoArrayList);
+            userInputTextbox.value = "";
+            userInputTextbox.focus();
+        };
+    </script>
+</body>
+</html>
