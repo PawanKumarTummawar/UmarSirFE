@@ -1,0 +1,13 @@
+table, td, th{
+    border: 1px solid;
+}
+div{
+    justify-items: center;
+}
+
+table{
+    width: 200px;
+    height: 200px;
+    text-align: center ;
+    vertical-align: center;
+}

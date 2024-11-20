@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.move-icon{
+    height: 70px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.move-button{
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.game-area{
+    display: inline-block;
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+
+}
