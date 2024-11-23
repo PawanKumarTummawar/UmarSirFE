@@ -1,0 +1,26 @@
+.left-section{
+    flex: 1;
+    border: solid 2px red;
+}
+.right-section{
+    flex: 1;
+    border: solid 2px green;
+}
+.parent-container{
+    display: flex;
+    column-gap: 20px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+}
