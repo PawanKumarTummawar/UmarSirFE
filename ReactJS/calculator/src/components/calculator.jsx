@@ -15,6 +15,7 @@ function Calculator() {
         setInput(eval(input).toString()); // alternatives are available for this.
       } catch {
         setInput('Error');
+        alert('Please enter a valid Expression')
       }
     } else {
       setInput(input + value);
