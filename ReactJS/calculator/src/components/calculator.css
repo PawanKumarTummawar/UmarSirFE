@@ -8,6 +8,16 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
   }
+
+  body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+
+  body.dark-mode .calculator {
+    background-color: #444;
+    color: #555;
+  }
   
   .display {
     font-size: 2rem;
@@ -37,7 +47,8 @@
   }
   
   button:hover {
-    background: #0056b3;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
   
   button.clear {

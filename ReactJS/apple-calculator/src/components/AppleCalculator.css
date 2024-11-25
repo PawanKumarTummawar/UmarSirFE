@@ -1,0 +1,103 @@
+/* Main container for the calculator */
+.calculator {
+    width: 320px;
+    background-color: #f0f0f5;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* The display area for the input/output */
+  .display {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 2rem;
+    color: #333;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    min-height: 50px;
+  }
+  
+  /* Style for calculator buttons */
+  .buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease-in-out;
+  }
+  
+  .button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+  }
+  
+  .button:hover {
+    background-color: #d8d8d8;
+  }
+  
+  /* Special button styles */
+  .button-clear, .button-del {
+    background-color: #ff3b30;
+    color: white;
+  }
+  
+  .button-clear:hover, .button-del:hover {
+    background-color: #e60000;
+  }
+  
+  .button-equals {
+    background-color: #4cd964;
+    color: white;
+  }
+  
+  .button-equals:hover {
+    background-color: #34b200;
+  }
+  
+  /* History section styles */
+  .history {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .history h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .history li {
+    padding: 5px 0;
+  }
+  
+  .history li span {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  

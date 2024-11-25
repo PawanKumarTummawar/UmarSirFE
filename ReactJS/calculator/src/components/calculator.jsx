@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { evaluate } from 'mathjs';
+import { evaluate } from 'mathjs';
 import './Calculator.css'; 
 import Button from './Button';
 
@@ -12,18 +12,19 @@ function Calculator() {
     if (value === '=') {
       try {
         // Evaluating the expression
-        setInput(eval(input).toString()); // alternatives are available for this.
+        setInput(evaluate(input).toString()); // alternatives are available for this.
       } catch {
         setInput('Error');
         alert('Please enter a valid Expression')
       }
     } else {
-      setInput(input + value);
+      setInput((input) => input + value);
     }
   };  
 
   function handleSwitch1() {
     setSwitch1(!switch1);
+    document.body.classList.toggle('dark-mode');
   }
   function handleClear()
   {
