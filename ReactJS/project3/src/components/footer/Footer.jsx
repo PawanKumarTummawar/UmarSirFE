@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import NavList from '../shared/NavList';
 
 const Footer = () => {
+    const footerListItems = ['Contact Us', 'About Us', 'Careers', 'Location'];
+
   return (
-    <div>Footer</div>
+     <NavList items = {footerListItems} />
   )
 }
 

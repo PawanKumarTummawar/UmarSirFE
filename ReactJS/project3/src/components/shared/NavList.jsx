@@ -1,13 +1,17 @@
 import React from 'react'
 import './NavList.css'
 
-const NavList = () => {
+const NavList = (props) => {
+
   return (
     <ul>
-        <li>TextReader</li>
-        <li>Calculator</li>
-        <li>App3</li>
-   </ul>
+      {props.items.map(
+        (navListItem, index) => 
+        {
+          return <li key={index}> {navListItem}</li>
+        }
+      )}
+    </ul>
   )
 }
 

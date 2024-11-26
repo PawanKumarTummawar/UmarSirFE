@@ -1,8 +1,10 @@
 import React from 'react';
-import Navbar from '../shared/Navbar';
+import NavList from '../shared/NavList';
 
 const Header = () => {
-    return <Navbar />;
+    const headerListItems = ['TextReader', 'Calculator', 'App3'];
+
+    return <NavList items = {headerListItems} />;
 };
 
 export default Header;
