@@ -18,7 +18,18 @@ import {myAllProducts} from '../../data/products.js'
   console.log(products)
   return (
     <div>
-      {/* <img src="/images/amazonhomepage.jpg" width="1200" height="600"/> */}
+      {
+        products.map(
+          (product,index)=>{
+            return <div key ={index}>
+              <h1>product.title</h1>
+            <p>{product.description}</p>
+            
+            </div>
+          }
+        )
+      }
+    
     </div>
   )
 }
