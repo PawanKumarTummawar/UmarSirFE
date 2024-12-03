@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { myAllProducts } from '../data/products.js';
+// import { myAllProducts } from '../data/products.js';
 import ProductCard from './ProductCard.jsx';
 import NavList from './shared/NavList.jsx';
 import Searchbar from './shared/Searchbar.jsx';
